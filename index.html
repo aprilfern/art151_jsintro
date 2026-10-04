@@ -5,10 +5,10 @@
 
   function tenPrint() {
     const hue = nn.random(360)
-    const clr = nn.hsl(hue, 100, 20)
-    const chars = '─ │ ┌ ┐ └ ┘ ├ ┤ ┬ ┴ ┼'
+    const clr = nn.hsl(hue, 100, 90)
+    const chars = '─ │ ✦ 𖦹 ✿ ♡'
     let pattern = ''
-    nn.times(600, () => pattern += nn.random(chars))
+    nn.times(220, () => pattern += nn.random(chars))
     nn.get('body')
       .content(pattern)
       .css('background', clr)
