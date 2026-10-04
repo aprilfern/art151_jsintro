@@ -1,10 +1,10 @@
-<script src="nn.min.js"></script>
+<script src="js/nn.min.js"></script>
 <script>
   /* global nn */
 
   async function setup () {
     // fetch data from the "Dog CEO" REST API
-    const url = 'https://dog.ceo/api/breeds/image/random'
+    const url = 'https://dog.ceo/api/breed/shihtzu/images/random'
     const res = await fetch(url)
     const data = await res.json()
     // press F12 to open console (fn + F12 on mac)
@@ -12,7 +12,7 @@
     // create an <img> and add it to the pag
     nn.create('img') 
       .set('src', data.message)
-      .css('width', 300)
+      .css('width', 700)
       .addTo('body')
   }
 
